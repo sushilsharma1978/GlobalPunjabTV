@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/frag_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".BlankFragment">
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/swipe_refresh_blank"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        >-->
+
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:background="@drawable/edittext_back"
+        android:fontFamily="sans-serif"
+        android:hint="Search here"
+        android:padding="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_search"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Top News"
+            android:textStyle="bold"
+            android:background="#f70000"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/yellow"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/topnews_slider"
+            android:layout_width="match_parent"
+            android:layout_height="185dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topnews_slider"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit4"
+                style="@style/SpinKitView.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorPrimaryDark" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

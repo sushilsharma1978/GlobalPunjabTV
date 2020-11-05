@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "192637415118",
+    "firebase_url": "https://global-punjab-news.firebaseio.com",
+    "project_id": "global-punjab-news",
+    "storage_bucket": "global-punjab-news.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192637415118:android:104f13eefed6e96bfd2a9f",
+        "android_client_info": {
+          "package_name": "com.app.root.globalpunjabtv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192637415118-s6esjh9ub4o30nmf6u0c60dckmdn5ct3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUJLYCbPfCarEs7ZTpmGnjY-DtQcqMWmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192637415118-s6esjh9ub4o30nmf6u0c60dckmdn5ct3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
